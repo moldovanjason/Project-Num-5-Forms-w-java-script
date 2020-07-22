@@ -1,3 +1,32 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.card-header {
+  background-color: #c9ddff;
+}
+
+.left-button {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.right-button {
+  border-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.card-holder {
+  justify-content: space-around;
+  width: 9rem;
+}
+
 @import "~bootstrap/scss/bootstrap.scss";
 
 /* 

@@ -25,152 +25,153 @@
             <h2 class="header">Payment Form Example</h2>
           </div>
           <div class="card-body">
-            <div class="alert alert-danger d-none">
-              <div class="form-row">
-                <div class="form-group col-md-5">
-                  <label for="card#">Card #</label>
+            <div class="alert alert-danger d-none"></div>
+            <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="card#">Card #</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleAccount"
+                  placeholder="####-####-####-####"
+                />
+              </div>
+              <div class="form-group col-md-3">
+                <label for="CVC#">CVC #</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleCvc"
+                  placeholder="####"
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="amount">Amount</label>
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
                   <input
                     type="number"
                     class="form-control"
-                    id="exampleAccount"
-                    placeholder="####-####-####-####"
+                    id="exampleAmount"
+                    placeholder="Amount"
                   />
                 </div>
-                <div class="form-group col-md-3">
-                  <label for="CVC#">CVC #</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="exampleCvc"
-                    placeholder="####"
-                  />
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="amount">Amount</label>
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">$</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="exampleFirst">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFirst"
+                  placeholder="John"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="exampleLast">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleLast"
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="city">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleCity"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputState">State</label>
+                <select id="exampleState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Florida</option>
+                  <option>California</option>
+                  <option>New York</option>
+                  <option>Alaska</option>
+                  <option>Hawaii</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="postalCode">Postal Code</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleZip"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="form-row d-flex justify-content-between">
+              <div class="form-group col-md-3">
+                <label for="weaccept">We accept</label>
+                <div class="input-group-prepend">
+                  <div class="input-group-text border-0 bg-dark left-button">
                     <input
-                      type="number"
-                      class="form-control"
-                      id="amount"
-                      placeholder="Amount"
+                      name="payment-option"
+                      type="radio"
+                      id="visa-card"
+                      aria-label="Radio button for following text input"
+                      checked
                     />
+                    <label for="visa-card"></label>
                   </div>
+                  <div class="input-group-text border-0 bg-dark rounded-0">
+                    <input
+                      name="payment-option"
+                      type="radio"
+                      id="white-card"
+                      aria-label="Radio button for following text input"
+                    />
+                    <label for="white-card"></label>
+                  </div>
+                  <div class="input-group-text border-0 bg-dark rounded-0">
+                    <input
+                      name="payment-option"
+                      type="radio"
+                      id="master-card"
+                      aria-label="Radio button for following text input"
+                    />
+                    <label for="master-card"></label>
+                  </div>
+                  <div class="input-group-text border-0 bg-dark right-button">
+                    <input
+                      name="payment-option"
+                      type="radio"
+                      id="black-card"
+                      aria-label="Radio button for following text input"
+                    />
+                    <label for="black-card"></label>
+                  </div>
+                </div>
+                <div class="d-flex w-10 card-holder py-2 ">
+                  <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                  <i class="fa fa-credit-card" aria-hidden="true"></i>
+                  <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                  <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="fname">First Name</label>
-                  <input
-                    type="text"
+              <div class="form-group col-md-6">
+                <label for="message">Message</label>
+                <div class="form-group">
+                  <textarea
                     class="form-control"
-                    id="fname"
-                    placeholder="John"
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="lname">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lname"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="city">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="city"
-                    placeholder=""
-                  />
-                </div>
-                <div class="form-group col-md-3">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>Florida</option>
-                    <option>California</option>
-                    <option>New York</option>
-                    <option>Alaska</option>
-                    <option>Hawaii</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-3">
-                  <label for="postalcode">Postal Code</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="postalcode"
-                    placeholder=""
-                  />
-                </div>
-              </div>
-              <div class="form-row d-flex justify-content-between">
-                <div class="form-group col-md-3">
-                  <label for="weaccept">We accept</label>
-                  <div class="input-group-prepend">
-                    <div class="input-group-text border-0 bg-dark left-button">
-                      <input
-                        name="payment-option"
-                        type="radio"
-                        id="visa-card"
-                        aria-label="Radio button for following text input"
-                      />
-                      <label for="visa-card"></label>
-                    </div>
-                    <div class="input-group-text border-0 bg-dark rounded-0">
-                      <input
-                        name="payment-option"
-                        type="radio"
-                        id="white-card"
-                        aria-label="Radio button for following text input"
-                      />
-                      <label for="white-card"></label>
-                    </div>
-                    <div class="input-group-text border-0 bg-dark rounded-0">
-                      <input
-                        name="payment-option"
-                        type="radio"
-                        id="master-card"
-                        aria-label="Radio button for following text input"
-                      />
-                      <label for="master-card"></label>
-                    </div>
-                    <div class="input-group-text border-0 bg-dark right-button">
-                      <input
-                        name="payment-option"
-                        type="radio"
-                        id="black-card"
-                        aria-label="Radio button for following text input"
-                      />
-                      <label for="black-card"></label>
-                    </div>
-                  </div>
-                  <div class="d-flex w-10 card-holder py-2 ">
-                    <i class="fa fa-cc-visa" aria-hidden="true"></i>
-                    <i class="fa fa-credit-card" aria-hidden="true"></i>
-                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="message">Message</label>
-                  <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  >
+Optional</textarea
+                  >
                 </div>
               </div>
             </div>
           </div>
-
           <div class="card-footer text-right">
             <button type="submit" class="btn btn-secondary">Cancel</button>
             <button type="submit" class="btn btn-primary">Send</button>
