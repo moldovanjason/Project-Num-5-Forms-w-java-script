@@ -21,35 +21,35 @@ const validate = e => {
   var firstN = document.querySelector("#exampleFirst");
   var lastN = document.querySelector("#exampleLast");
   if (accField.value.length < 16) {
-    atError("credit card number needs to be 16 digits");
+    atError("Credit card number needs to be 16 digits");
     accField.classList.add("is-invalid");
   }
   if (ccvCode.value.length < 3) {
-    atError("ccv should be at least three digits");
+    atError("CCV should be at least 3 digits");
     ccvCode.classList.add("is-invalid");
   }
   if (amt.value <= 0) {
-    atError("put in amount");
+    atError("Put in amount");
     amt.classList.add("is-invalid");
   }
   if (cit.value.length < 2) {
-    atError("enter city");
+    atError("Enter City");
     cit.classList.add("is-invalid");
   }
   if (ste.value === "Choose...") {
-    atError("select state");
+    atError("Select State");
     ste.classList.add("is-invalid");
   }
   if (zip.value.length < 5) {
-    atError("postal code should be 5 digits");
+    atError("Postal code should be five digits");
     zip.classList.add("is-invalid");
   }
   if (firstN.value.length < 2) {
-    atError("enter first name");
+    atError("Enter First Name");
     firstN.classList.add("is-invalid");
   }
   if (lastN.value.length < 2) {
-    atError("enter last name");
+    atError("Enter Last Name");
     lastN.classList.add("is-invalid");
   }
 };
